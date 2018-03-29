@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" >
+  <head>
+    
+    <title>Crypto Assets </title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+    <meta name="author" content="shine limited" />
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style type="text/css">
+      .navbar-nav > li.navbar-right {
+    float: right !important;
+  }
+    </style>
+  </head>
+
+
+
+  <body ng-controller="bittrexController">
+    <div class="container-fluid outerdiv">
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#"><b>Cryptocurrency</b> <span class="span-style"> Assets Manager</span></a>
+
+           <ul class="nav navbar-nav">
+              <li class="active navbar-right"><a href="#">Home</a></li>
+              <li class="navbar-right"><a href="#">Register</a></li>
+              <li class="navbar-right" data-toggle="modal" data-target="#popUpWindow">Login</li>
+              <li class="navbar-right"><a href="#">Right 1</a></li>
+            </ul>
+           <!--  <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                <a class="nav-link" href="#">Right</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+                </li>
+           </ul> -->
+          </div>
+        </div>
+      </nav>
+
+       <!-- login modal -->
+       <div class="modal fade" id="popUpWindow">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- header -->
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title">Login Form</h3>
+        </div>
+        <!-- body -->
+        <div class="modal-header">
+          <form role="form">
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Email"/>
+              <input type="password" class="form-control" placeholder="Password" />
+            </div>
+          </form>
+        </div>
+        <!-- footer -->
+        <div class="modal-footer">
+          <button class="btn btn-primary btn-block">Log In</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+      <div class="row">
+      <div class="col-md-6">
+        <h2  style="padding-top: 20%; padding-left: 20%"> <STRONG>LET BUILD THE WORLD TOGETHER</STRONG> Managing of your cryptocurrience assets have been made easy by the introduction of Cryptocurrency Assets Manager. Join us </h2>
+      </div>
+      <div class="col-md-6">
+        <!-- <img src="/var/www/html/MovieApp/images/editlater.jpg"> -->
+      </div>
+      </div>
+      
+      <!-- <table datatable="ng" dt-options="model.dtOptionsAssessment"
+             class="table table-striped table-bordered table-hover">
+        <thead>
+        <tr>
+          <th>S/N</th>
+          <th>MarketName</th>
+          <th>Bid</th>
+          <th>MarketName</th>
+          <th>Ask</th>
+        </tr>
+        </thead>
+        <tbody style="text-align: center">
+
+        <tr ng-repeat="bittrex in bittrexmarket.result">
+          <td>{{$index+1}}</td>
+          <td>
+            {{bittrex.MarketName}}
+          </td>
+
+           <td>
+          {{bittrex.Bid}}
+          </td>
+
+          <td>
+            {{bittrex.Ask}}
+          </td>
+          <td>
+            {{bittrex.Volume}}
+          </td>
+        </tr>
+        </tbody>
+      </table> -->
+    </div>
+
+    <script src="js/angular.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+<div class=" col-md-12" ng-repeat="subjectsub in studentcomment.sub">
+                                            <div class="form-group">
+                                                <label> {{subjectsub.name}} :</label><br>
+                                                <textarea maxlength="{{subjectsub.comment_limit}}" class="form-control"
+                                                          style=" resize: none;" ng-model="subjectsub.comment"
+                                                          placeholder="Write Comment on Student's Performance on {{subjectsub.name+'...'}}" ng-disabled="model.is_submit"></textarea>
+                                            </div>
+                                        </div>
